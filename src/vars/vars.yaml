@@ -1,0 +1,23 @@
+covid19:
+  files_to_download:
+    [OOV_COVID19_totaal.shp, OOV_COVID19_totaal.shx, OOV_COVID19_totaal.dbf]
+  tables_to_create:
+    alcoholverkoopverbod: AVV
+    straatartiestverbod: SAV
+    gebiedsverbod: GVP
+overlastgebieden:
+  files_to_download:
+    [OOV_gebieden_totaal.shp, OOV_gebieden_totaal.shx, OOV_gebieden_totaal.dbf]
+  tables_to_create:
+    cameratoezicht: CTG
+    dealeroverlast: DOG
+    uitgaansoverlast: UOG
+    alcoholverbod: AVG
+    taxistandplaats: taxi
+    vuurwerkvrij: VVZ
+    barbecueverbod: BBQ
+    rondleidingverbod: RLV
+    algemeenoverlast: AOG
+    messenverbod: MVG
+    groepsfietsverbod: GFG
+    straatartiestverbod: SAV
