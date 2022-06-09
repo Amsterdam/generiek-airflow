@@ -5,7 +5,7 @@ from airflow import DAG
 from airflow.models import Variable
 from airflow.operators.bash import BashOperator
 from airflow.operators.dummy import DummyOperator
-from common import SHARED_DIR, MessageOperator, default_args, pg_params, quote_string
+from common import SHARED_DIR, default_args, pg_params, quote_string
 from common.path import mk_dir
 from contact_point.callbacks import get_contact_point_on_failure_callback
 from postgres_check_operator import COUNT_CHECK, GEO_CHECK, PostgresMultiCheckOperator
@@ -44,12 +44,7 @@ with DAG(
     template_searchpath=["/"],
     on_failure_callback=get_contact_point_on_failure_callback(dataset_id=dag_id),
 ) as dag:
-
-    # 1. Post info message on slack
-    slack_at_start = MessageOperator(
-        task_id="slack_at_start",
-    )
-
+   
     # 2. Create temp directory to store files
     mkdir = mk_dir(Path(tmp_dir))
 
