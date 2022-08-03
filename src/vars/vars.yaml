@@ -21,3 +21,7 @@ overlastgebieden:
     messenverbod: MVG
     groepsfietsverbod: GFG
     straatartiestverbod: SAV
+reclamebelasting:
+  files_to_download:
+    shp_file: Reclame_tariefgebieden.shp
+    zip_file: reclame-tarief-gebieden.zip
