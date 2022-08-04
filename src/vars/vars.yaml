@@ -21,6 +21,17 @@ overlastgebieden:
     messenverbod: MVG
     groepsfietsverbod: GFG
     straatartiestverbod: SAV
+precariobelasting:
+  data_endpoints:
+    bedrijfsvaartuigen: dcatd/datasets/aUBH75WzCsTcYQ/purls/3
+    passagiersvaartuigen: dcatd/datasets/aUBH75WzCsTcYQ/purls/4
+    woonschepen: dcatd/datasets/aUBH75WzCsTcYQ/purls/2
+    terrassen: dcatd/datasets/aUBH75WzCsTcYQ/purls/1
+  temp_data:
+    bedrijfsvaartuigen: precariobelasting/bedrijfsvaartuigen.geojson
+    passagiersvaartuigen: precariobelasting/passagiersvaartuigen.geojson
+    woonschepen: precariobelasting/woonschepen.geojson
+    terrassen: precariobelasting/terrassen.geojson
 reclamebelasting:
   files_to_download:
     shp_file: Reclame_tariefgebieden.shp
