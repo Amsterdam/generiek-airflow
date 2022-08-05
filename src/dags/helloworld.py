@@ -1,5 +1,4 @@
 from airflow import DAG
-from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 from common import default_args, MessageOperator
 
@@ -21,8 +20,6 @@ with DAG(
 ) as dag:
     task1 = MessageOperator(
         task_id="slack_at_start",
-        #//OLD task_id="send_slack_message",
-        #//OLD bash_command= "echo 'This command could be adapted to send a message on Slack.'",
     )
 
     task2 = PythonOperator(task_id="hello_task", python_callable=print_hello)
