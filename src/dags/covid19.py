@@ -85,7 +85,7 @@ with DAG(
 
     # 5. Dummy operator acts as an interface between parallel tasks to
     # another parallel tasks with different number of lanes
-    # (without this intermediar, Airflow will give an error)
+    # (without this intermediary, Airflow will give an error)
     Interface = DummyOperator(task_id="interface")
 
     # 6. Import data
