@@ -159,7 +159,7 @@ with DAG(
         total_checks = count_checks + geo_checks
         check_name[file_name] = total_checks
 
-    # 9. Execute bundled checks (step 7) on database
+    # 9. Execute bundled checks (step 8) on database
     multi_checks = [
         PostgresMultiCheckOperator(
             task_id=f"multi_check_{file_name}",
