@@ -179,7 +179,7 @@ with DAG(
         pg_schema=tmp_database_schema,
     )
 
-    # 11. Add column TITLE as its was set in the display property in the metadataschema
+    # 11. Add column TITLE as it was set in the display property in the metadataschema
     add_title_columns = [
         PostgresOnAzureOperator(
             task_id=f"add_title_column_{file_name}",
